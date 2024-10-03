@@ -1,3 +1,5 @@
+
+[![Build status](https://ci.appveyor.com/api/projects/status/w8wfiowrmxt3id4b?svg=true)](https://ci.appveyor.com/project/DmitryBP/netology-ajs-4-test-ci-task-3)
 ## Mocking (задача со звёздочкой)
 
 **Важно**: данная задача не является обязательной 

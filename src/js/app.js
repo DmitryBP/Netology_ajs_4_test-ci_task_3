@@ -1,15 +1,17 @@
 // TODO: write your code here
 
-export const sortHealth = (healthObjsArr) => {
-  return healthObjsArr.sort((a, b) => {
-    return b.health - a.health;
-  });
-};
+// Ваша функция:
+import fetchData from './http';
 
-console.log(
-  sortHealth([
-    { name: "мечник", health: 10 },
-    { name: "маг", health: 100 },
-    { name: "лучник", health: 80 },
-  ])
-);
+export function getLevel(userId) {
+  const response = fetchData(`https://server/user/${userId}`);
+  
+  // TODO: логика обработки
+  if (response.status === 'ok') {
+     return `Ваш текущий уровень: ${response.level}`; 
+  }
+  
+  return `Информация об уровне временно недоступна`;
+}
+
+// getLevel(1)
